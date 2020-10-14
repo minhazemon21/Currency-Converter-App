@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33E9FF"
+
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:hint="BDT"
+        android:inputType="number"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:id="@+id/eBDT"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_below="@+id/eBDT"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textSize="40dp"
+            android:id="@+id/rbUSD"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAD"
+            android:textSize="40dp"
+            android:id="@+id/rbCAD"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BITCOIN"
+            android:textSize="40dp"
+            android:id="@+id/rbBC"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:layout_below="@+id/rg"
+        android:onClick="convert_method"
+        android:textSize="40dp"
+        android:id="@+id/btnconvert"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvmsg"
+        android:layout_below="@+id/btnconvert"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:id="@+id/tvRESULT"
+        android:layout_below="@+id/tvmsg"
+        >
+    </TextView>
+
+</RelativeLayout>
